@@ -35,5 +35,4 @@ namespace MVC_SuperSol.Repositories
         }
     }
 
-    }
 }

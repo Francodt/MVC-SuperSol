@@ -1,0 +1,8 @@
+C:\Development\Projects\MVC-SuperSol\MVC-SuperSol.Repositories\obj\Debug\MVC-SuperSol.Repositories.csprojResolveAssemblyReference.cache
+C:\Development\Projects\MVC-SuperSol\MVC-SuperSol.Repositories\bin\Debug\MVC-SuperSol.Repositories.dll
+C:\Development\Projects\MVC-SuperSol\MVC-SuperSol.Repositories\bin\Debug\MVC-SuperSol.Repositories.pdb
+C:\Development\Projects\MVC-SuperSol\MVC-SuperSol.Repositories\bin\Debug\Dapper.dll
+C:\Development\Projects\MVC-SuperSol\MVC-SuperSol.Repositories\bin\Debug\Dapper.pdb
+C:\Development\Projects\MVC-SuperSol\MVC-SuperSol.Repositories\bin\Debug\Dapper.xml
+C:\Development\Projects\MVC-SuperSol\MVC-SuperSol.Repositories\obj\Debug\MVC-SuperSol.Repositories.dll
+C:\Development\Projects\MVC-SuperSol\MVC-SuperSol.Repositories\obj\Debug\MVC-SuperSol.Repositories.pdb

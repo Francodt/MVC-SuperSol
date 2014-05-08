@@ -67,7 +67,7 @@
 				};
 
 				busyViewModel.IsBusy(true);
-				$.post("/Home/SendMessage/", { fullName: fullName(), email: email(), message: message() },
+				$.post("/Home/AddEmployee/", { fullName: fullName(), email: email() },
 					function (response) { handleSendMessage(response); });
 			};
 

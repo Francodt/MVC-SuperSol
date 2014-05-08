@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <connectionStrings>
   <add name="SuperSolDB" connectionString="Data Source=localhost;Initial Catalog=SuperSolDB;Integrated security=True;Trusted_Connection=yes;User Id=sa;Password=energy" providerName="System.Data.SqlClient" />
-  <add name="UsersConnection" connectionString="Data Source=localhost;Initial Catalog=IEMS;Integrated security=True;Trusted_Connection=yes;User Id=sa;Password=energy" providerName="System.Data.SqlClient" />
+  <add name="UsersConnection" connectionString="Data Source=localhost;Initial Catalog=SuperSolDB;Integrated security=True;Trusted_Connection=yes;User Id=sa;Password=energy" providerName="System.Data.SqlClient" />
   <add name="MasterConnection" connectionString="Data Source=localhost;Integrated security=True;Trusted_Connection=yes;User Id=sa;Password=energy;database=master" providerName="System.Data.SqlClient" />
 </connectionStrings>
