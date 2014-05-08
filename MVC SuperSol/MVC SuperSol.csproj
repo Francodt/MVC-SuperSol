@@ -355,6 +355,12 @@
   <ItemGroup>
     <Content Include="Views\Shared\_html5shiv.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVC-SuperSol.Repositories\MVC-SuperSol.Repositories.csproj">
+      <Project>{433a3c06-0e7d-4815-a048-402c5cea3ebf}</Project>
+      <Name>MVC-SuperSol.Repositories</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

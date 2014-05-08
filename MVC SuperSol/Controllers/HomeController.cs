@@ -26,7 +26,7 @@ namespace MVC_SuperSol.Controllers
             var data = new
             {
                 isOk = false,
-                errorMessage = "TO DO",
+                errorMessage = "TODO",
 
                 fullName = fullName,
                 email = email,
