@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVC_SuperSol.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -32,6 +33,16 @@ namespace MVC_SuperSol.Controllers
                 message = message,
             };
             return new JsonResult { Data = data };
+        }
+
+        public JsonResult AddEmployee(string fullname, string email)
+        {
+            using (var employeerepo = new EmployeeRepository()) 
+            {
+                employeerepo.InsertEmployee(fullname, email);
+            }
+
+            return null;
         }
 
         /*private static List<HomeInputModel> _models = ModelIntializer.CreateHomeInputModels();
