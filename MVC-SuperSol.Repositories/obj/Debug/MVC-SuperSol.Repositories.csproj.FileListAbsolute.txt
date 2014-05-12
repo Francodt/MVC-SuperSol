@@ -6,3 +6,15 @@ C:\Development\Projects\MVC-SuperSol\MVC-SuperSol.Repositories\bin\Debug\Dapper.
 C:\Development\Projects\MVC-SuperSol\MVC-SuperSol.Repositories\bin\Debug\Dapper.xml
 C:\Development\Projects\MVC-SuperSol\MVC-SuperSol.Repositories\obj\Debug\MVC-SuperSol.Repositories.dll
 C:\Development\Projects\MVC-SuperSol\MVC-SuperSol.Repositories\obj\Debug\MVC-SuperSol.Repositories.pdb
+C:\Development\MVC-SuperSol\MVC-SuperSol.Repositories\bin\Debug\MVC-SuperSol.Repositories.dll
+C:\Development\MVC-SuperSol\MVC-SuperSol.Repositories\bin\Debug\MVC-SuperSol.Repositories.pdb
+C:\Development\MVC-SuperSol\MVC-SuperSol.Repositories\bin\Debug\Dapper.dll
+C:\Development\MVC-SuperSol\MVC-SuperSol.Repositories\bin\Debug\Dapper.pdb
+C:\Development\MVC-SuperSol\MVC-SuperSol.Repositories\bin\Debug\Dapper.xml
+C:\Development\MVC-SuperSol\MVC-SuperSol.Repositories\obj\Debug\MVC-SuperSol.Repositories.csprojResolveAssemblyReference.cache
+C:\Development\MVC-SuperSol\MVC-SuperSol.Repositories\obj\Debug\MVC-SuperSol.Repositories.dll
+C:\Development\MVC-SuperSol\MVC-SuperSol.Repositories\obj\Debug\MVC-SuperSol.Repositories.pdb
+C:\Development\MVC-SuperSol\MVC-SuperSol.Repositories\bin\Debug\SuperSol.Domain.dll
+C:\Development\MVC-SuperSol\MVC-SuperSol.Repositories\bin\Debug\SuperSol.Domain.pdb
+C:\Development\MVC-SuperSol\MVC-SuperSol.Repositories\bin\Debug\SuperSol.Data.dll
+C:\Development\MVC-SuperSol\MVC-SuperSol.Repositories\bin\Debug\SuperSol.Data.pdb

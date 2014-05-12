@@ -1,0 +1,57 @@
+﻿@model MVC_SuperSol.Models.EmployeeListModel
+@{
+   
+    ViewBag.Title = "View Employees";
+}
+<hgroup class="title">
+    <h1>View Employees</h1>
+</hgroup>
+<div class="row-fluid">
+	<div class="span5">
+		<br />
+
+		<header>
+			<h3>Employee information:</h3>
+		</header>
+
+
+
+	    <div class="row">
+	        <style>
+                table, th, td {
+                    border: 1px solid black;
+                    padding-left: 4px;
+                }
+        	</style>
+	        <table style=" width: 180px; margin: 30px; border: 1px solid black;  ">
+	            <thead>
+	                <td><b>Employee Name</b></td>
+	            </thead>
+	            <tbody>
+	                @foreach (var employee in Model.Employees)
+	                {
+	                    <tr>
+	                        <td>@employee.Name</td>
+	                    </tr>
+	                }
+	            </tbody>
+	        </table>
+	    </div>
+        
+        <div class="control-group">
+            <div class="controls"><button type="button" class="btn btn-primary" data-bind="click: sendMessage">Edit</button></div>
+        </div>
+
+	
+@section Scripts {
+	<script>
+	
+
+		$(document).ready(function ()
+		{
+			navBarViewModel.SelectedItemId(3); //Contact Us
+			sideBarViewModel.SelectedItemId(3); //Contact Us
+			busyViewModel.IsBusy(false);
+		});
+	</script>
+}

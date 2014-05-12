@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MVC_SuperSol.Models;
 //using Models;
 
 namespace MVC_SuperSol.Controllers
@@ -20,10 +21,7 @@ namespace MVC_SuperSol.Controllers
             return View();
         }
 
-        public ActionResult ViewEmployees()
-        {
-            return View();
-        }
+        
 
         [AllowAnonymous]
         public JsonResult SendMessage(string fullName, string email, string message)

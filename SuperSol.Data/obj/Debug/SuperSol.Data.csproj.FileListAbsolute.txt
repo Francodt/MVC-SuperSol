@@ -1,0 +1,4 @@
+C:\Development\MVC-SuperSol\SuperSol.Data\bin\Debug\SuperSol.Data.dll
+C:\Development\MVC-SuperSol\SuperSol.Data\bin\Debug\SuperSol.Data.pdb
+C:\Development\MVC-SuperSol\SuperSol.Data\obj\Debug\SuperSol.Data.dll
+C:\Development\MVC-SuperSol\SuperSol.Data\obj\Debug\SuperSol.Data.pdb

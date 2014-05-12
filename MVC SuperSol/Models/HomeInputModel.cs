@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Models
+namespace MVC_SuperSol.Models
 {
     public class HomeInputModel
     {
@@ -21,6 +21,8 @@ namespace Models
 
         [DataType(DataType.Password)]
         public string Password { get; set; }
+
+        
     }
 
     public static class ModelIntializer

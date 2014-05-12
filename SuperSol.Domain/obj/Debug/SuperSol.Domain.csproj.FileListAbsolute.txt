@@ -1,0 +1,5 @@
+C:\Development\MVC-SuperSol\SuperSol.Domain\bin\Debug\SuperSol.Domain.dll
+C:\Development\MVC-SuperSol\SuperSol.Domain\bin\Debug\SuperSol.Domain.pdb
+C:\Development\MVC-SuperSol\SuperSol.Domain\obj\Debug\SuperSol.Domain.csprojResolveAssemblyReference.cache
+C:\Development\MVC-SuperSol\SuperSol.Domain\obj\Debug\SuperSol.Domain.dll
+C:\Development\MVC-SuperSol\SuperSol.Domain\obj\Debug\SuperSol.Domain.pdb

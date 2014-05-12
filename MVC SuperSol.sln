@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC SuperSol", "MVC SuperSol\MVC SuperSol.csproj", "{9186CE7D-CC43-4F36-894D-9F3F970BF3C1}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCSuperSol", "MVC SuperSol\MVCSuperSol.csproj", "{9186CE7D-CC43-4F36-894D-9F3F970BF3C1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC-SuperSol.Repositories", "MVC-SuperSol.Repositories\MVC-SuperSol.Repositories.csproj", "{433A3C06-0E7D-4815-A048-402C5CEA3EBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperSol.Domain", "SuperSol.Domain\SuperSol.Domain.csproj", "{8BBA31F8-3675-41F9-824D-9E106D457198}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperSol.Data", "SuperSol.Data\SuperSol.Data.csproj", "{711FA2EF-105F-4B14-9A10-692B396DA963}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +25,14 @@ Global
 		{433A3C06-0E7D-4815-A048-402C5CEA3EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{433A3C06-0E7D-4815-A048-402C5CEA3EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{433A3C06-0E7D-4815-A048-402C5CEA3EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BBA31F8-3675-41F9-824D-9E106D457198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BBA31F8-3675-41F9-824D-9E106D457198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BBA31F8-3675-41F9-824D-9E106D457198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BBA31F8-3675-41F9-824D-9E106D457198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{711FA2EF-105F-4B14-9A10-692B396DA963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{711FA2EF-105F-4B14-9A10-692B396DA963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{711FA2EF-105F-4B14-9A10-692B396DA963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{711FA2EF-105F-4B14-9A10-692B396DA963}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
