@@ -350,6 +350,7 @@
     <Content Include="Scripts\Custom\Web.config" />
     <None Include="Scripts\jquery-2.0.2.min.map" />
     <Content Include="Views\Shared\_busyIndicator.cshtml" />
+    <Content Include="Views\Home\ViewEmployees.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -12,7 +12,11 @@ namespace MVC_SuperSol.Repositories
         public void InsertEmployee(string fullname, string email)
         {
             var employeedb = _db.Execute("insert into employee (fullname, email) values (@Fullname, @Email)", new { Fullname = fullname, Email = email });
+        }
 
+        public void ReadEmployeesFromDB()
+        {
+            var listofemployees = _db.Query("SELECT * FROM SuperSolDB.Employee");
         }
     }
 }

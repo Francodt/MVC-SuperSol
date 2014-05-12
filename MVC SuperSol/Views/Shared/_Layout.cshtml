@@ -2,7 +2,7 @@
 <html lang="en">
     <head runat="server">
         <meta charset="utf-8" />
-        <title>@ViewBag.Title - MVC 4 Razor Application</title>
+        <title>@ViewBag.Title - SuperSol</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link href="@Href("~/Content/bootstrap.min.css")" rel="stylesheet" type="text/css" />
@@ -101,8 +101,9 @@
 			{
 				navbarLeft:
 				[
-					{Id: 1, Text: "Home", HRef: "@Href("~/")", Role: "", DataToggle: "", DropDown: []},
-					{Id: 2, Text: "Add Employee", HRef: "@Href("~/Home/Contact/")", Role: "", DataToggle: "", DropDown: []},
+					{ Id: 1, Text: "Home", HRef: "@Href("~/")", Role: "", DataToggle: "", DropDown: []},
+					{ Id: 2, Text: "Add Employee", HRef: "@Href("~/Home/Contact/")", Role: "", DataToggle: "", DropDown: [] },
+                    { Id: 3, Text: "View Employees", HRef: "@Href("~/Home/ViewEmployees/")", Role: "", DataToggle: "", DropDown: [] },
 				],
 				navbarRight:
 				[

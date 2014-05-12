@@ -20,6 +20,11 @@ namespace MVC_SuperSol.Controllers
             return View();
         }
 
+        public ActionResult ViewEmployees()
+        {
+            return View();
+        }
+
         [AllowAnonymous]
         public JsonResult SendMessage(string fullName, string email, string message)
         {
@@ -40,6 +45,16 @@ namespace MVC_SuperSol.Controllers
             using (var employeerepo = new EmployeeRepository()) 
             {
                 employeerepo.InsertEmployee(fullname, email);
+            }
+
+            return null;
+        }
+
+        public JsonResult ReadEmployeesFromDB()
+        {
+            using (var employeerepo = new EmployeeRepository())
+            {
+                employeerepo.ReadEmployeesFromDB();
             }
 
             return null;
