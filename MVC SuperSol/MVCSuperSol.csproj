@@ -191,6 +191,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\EmployeeEditModel.cs" />
     <Compile Include="Models\EmployeeListModel.cs" />
     <Compile Include="Models\HomeInputModel.cs" />
     <Compile Include="NavigationRoutes\INavigationRouteFilter.cs" />
@@ -349,6 +350,7 @@
     <None Include="Scripts\jquery-2.0.2.min.map" />
     <Content Include="Views\Shared\_busyIndicator.cshtml" />
     <Content Include="Views\Employee\List.cshtml" />
+    <Content Include="Views\Employee\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -11,14 +11,24 @@ namespace MVC_SuperSol.Controllers
     public class EmployeeController : Controller
     {
        
-
         public ActionResult List()
         {
             var repo = new EmployeeRepository();
             var model = new EmployeeListModel();
-            model.Employees= repo.ReadEmployeesFromDB();
+            model.Employees = repo.ReadEmployeesFromDB();
+
+            var model1 = new EmployeeEditModel();
+            model1.Employees = repo.GetEmployeeByID();
+
             return View(model);
         }
 
+        public ActionResult Edit(int id)
+        {
+            var repo = new EmployeeRepository();
+            var model = new EmployeeEditModel();
+            model.Employees = repo.GetEmployeeByID();
+            return View(model);
+        }
     }
 }

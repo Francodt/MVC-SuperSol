@@ -24,5 +24,19 @@ namespace MVC_SuperSol.Repositories
 
             return employees;
         }
+
+        public List<Employee> GetEmployeeByID()
+        {
+            var listofemployees = _db.Query<employee>("SELECT * FROM employee WHERE employeeid = 1");
+            var employees = new List<Employee>();
+
+            foreach (var employee in listofemployees)
+            {
+                employees.Add(new Employee { Id = employee.employeeid, Name = employee.fullname, Email = employee.email });
+            }
+
+            return employees;
+        }
+
     }
 }
