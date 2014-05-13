@@ -5,6 +5,101 @@
     
 }
 
-<h2>title</h2>
+<h2>Edit Employee</h2>
 
-EDIT EMP
+<div class="row-fluid">
+<div class="span5">
+    <br />
+
+    <header>
+        <h3>Employee information:</h3>
+    </header>
+    <div class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="messageFullName">Full Name:</label>
+            <div class="controls"><input class="input-large" id="messageFullName" type="text" data-bind="value: fullName"/></div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="messageEmail">Email:</label>
+            <div class="controls"><input class="input-large" id="messageEmail" type="text" data-bind="value: email" /></div>
+        </div>
+        <div class="control-group">
+            <div class="controls"><button type="button" class="btn btn-primary pull-right" data-bind="click: sendMessage">Submit</button></div>
+        </div>
+    </div>
+    <div class="alert" data-bind="visible:showMessage, text:messageResponse, css:{'alert-success':messageOk, 'alert-error':!messageOk()}"></div>
+</div>
+    </div>
+
+@section Scripts {
+    <script>
+		function ContactViewModel()
+		{
+		    fullName = ko.observable();
+			email = ko.observable();
+			message = ko.observable();
+			messageResponse = ko.observable();
+			showMessage = ko.observable(false);
+			messageOk = ko.observable(false);
+
+			sendMessage = function ()
+			{
+				showMessage(false);
+				if (!fullName())
+				{
+					showMessage(true);
+					messageOk(false);
+					messageResponse("Please enter your full name");
+					return;
+				};
+
+				if (!email())
+				{
+					showMessage(true);
+					messageOk(false);
+					messageResponse("Please enter your email address");
+					return;
+				};
+
+
+				if (!IsValidEmailAddress1(email()) || !IsValidEmailAddress2(email()))
+				{
+					showMessage(true);
+					messageOk(false);
+					messageResponse("Please enter a valid email address");
+					return;
+				};
+
+				busyViewModel.IsBusy(true);
+				$.post("/Home/UpdateEmployee/", { fullName: fullName(), email: email(), employeeid: 1},
+					function (response) { handleSendMessage(response); });
+			};
+
+			handleSendMessage = function (messageData)
+			{
+				//alert(messageData.email);
+				showMessage(true);
+				if (messageData.isOk)
+				{
+					messageResponse("Thank you for you message. We will respond as soon as possible.");
+					messageOk(true);
+					busyViewModel.IsBusy(false);
+					return;
+				}
+
+				messageResponse(messageData.errorMessage ? messageData.errorMessage : "An error prevented us from receiving your message. Please try again or call us for assistance.");
+				messageOk(false);
+				changeLocation("@Href("~/")");
+			};
+		};
+
+		ko.applyBindings(new ContactViewModel(), document.getElementById("bodyDiv"));
+
+		$(document).ready(function ()
+		{
+			navBarViewModel.SelectedItemId(3); //Contact Us
+			sideBarViewModel.SelectedItemId(3); //Contact Us
+			busyViewModel.IsBusy(false);
+		});
+    </script>
+}

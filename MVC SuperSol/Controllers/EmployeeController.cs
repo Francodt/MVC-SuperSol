@@ -16,10 +16,6 @@ namespace MVC_SuperSol.Controllers
             var repo = new EmployeeRepository();
             var model = new EmployeeListModel();
             model.Employees = repo.ReadEmployeesFromDB();
-
-            var model1 = new EmployeeEditModel();
-            model1.Employees = repo.GetEmployeeByID();
-
             return View(model);
         }
 

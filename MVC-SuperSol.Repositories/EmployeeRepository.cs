@@ -27,7 +27,7 @@ namespace MVC_SuperSol.Repositories
 
         public List<Employee> GetEmployeeByID()
         {
-            var listofemployees = _db.Query<employee>("SELECT * FROM employee WHERE employeeid = 1");
+            var listofemployees = _db.Query<employee>("SELECT * FROM employee where employeeid = 1");
             var employees = new List<Employee>();
 
             foreach (var employee in listofemployees)
@@ -36,6 +36,11 @@ namespace MVC_SuperSol.Repositories
             }
 
             return employees;
+        }
+
+        public void UpdateEmployee(string fullname, string email, int employeeid)
+        {
+            var employeedb = _db.Execute("update employee set fullname =@Fullname,email =@Email where employeeid = @Id", new { Fullname = fullname, Email = email, Id = employeeid });
         }
 
     }

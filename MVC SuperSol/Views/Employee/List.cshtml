@@ -23,17 +23,17 @@
                     padding-left: 4px;
                 }
         	</style>
-	        <table style=" width: 180px; margin: 30px; border: 1px solid black;  ">
+	        <table class="table" id="testable" style=" width: 180px; margin: 30px; border: 1px solid black;  ">
 	            <thead>
 	                <td><b>Employee Name</b></td>
 	            </thead>
 	            <tbody>
 	                @foreach (var employee in Model.Employees)
-	                {
-	                    <tr>
-	                        <td>@employee.Name</td>
-	                    </tr>
-	                }
+                    {
+                        <tr id="@employee.Id" data-url="../Edit/@employee.Id">
+                            <td>@employee.Name</td>
+                        </tr>
+                    }
 	            </tbody>
 	        </table>
 	    </div>
@@ -44,14 +44,31 @@
 
 	
 @section Scripts {
-	<script>
+    <script>
 	
 
-		$(document).ready(function ()
-		{
-			navBarViewModel.SelectedItemId(3); //Contact Us
-			sideBarViewModel.SelectedItemId(3); //Contact Us
-			busyViewModel.IsBusy(false);
-		});
-	</script>
+        $(document).ready(function ()
+        {
+            navBarViewModel.SelectedItemId(3); //Contact Us
+            sideBarViewModel.SelectedItemId(3); //Contact Us
+            busyViewModel.IsBusy(false);
+        });
+
+        @*$(document).ready(function () {
+            $('#testable tr').click(function(event) {
+                alert($(this).attr('id'));
+                HRef: "@Href("~/Employee/Edit/1")";
+            });
+        });*@
+
+        $(function() {
+            $('table.table tr').click(function() {
+                window.location.href = $(this).data('url');
+            });
+        })
+
+    </script>
+        
+
+    
 }

@@ -58,6 +58,16 @@ namespace MVC_SuperSol.Controllers
             return null;
         }
 
+        public JsonResult UpdateEmployee(string fullname, string email, int employeeid)
+        {
+            using (var employeerepo = new EmployeeRepository())
+            {
+                employeerepo.UpdateEmployee(fullname, email, employeeid);
+            }
+
+            return null;
+        }
+
         /*private static List<HomeInputModel> _models = ModelIntializer.CreateHomeInputModels();
         public ActionResult Index()
         {
